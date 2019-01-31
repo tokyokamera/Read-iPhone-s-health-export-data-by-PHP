@@ -22,8 +22,6 @@ As a side note, this Apple Health data is actually not the raw sensor data. Your
 
 3) Read Apple Health XML with PHP
 
-<?php
-
 $xml=simplexml_load_file("export.xml") or die("Error: Cannot create object");
 
 foreach ($xml->children() as $i) {
@@ -49,8 +47,6 @@ foreach ($xml->children() as $i) {
     }
   }
 }
-
-?>
 
 
 This process may take several minutes to run depending on the size of your Apple Health.
