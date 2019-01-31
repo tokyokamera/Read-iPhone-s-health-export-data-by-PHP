@@ -44,10 +44,9 @@ foreach ($xml->children() as $i) {
       case "HKQuantityTypeIdentifierBasalEnergyBurned":
         echo "EnergyBurned=" .$i['value'] . ' ' . $i['unit'] . " Date=" . substr($i['creationDate'],0,19);
         break;
-    }
-  }
+      }
+   }
 }
-
 
 This process may take several minutes to run depending on the size of your Apple Health.
 
